@@ -1,0 +1,74 @@
+
+
+
+
+
+<nav class="navbar navbar-expand-md navbar-ligth">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbar-toggler"
+      aria-controls="navbarTogglerDemo01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-toggler">
+      <a class="navbar-brand" href="">
+        <img src="images/61238.png" alt="logo" width="50" />
+      </a>
+      <ul class="navbar-nav d-flex justify-content-center align-items-center">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="/"
+          >Home</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid mt-5"></div>
+
+    <section class="container contenedor-login alingn-items-stretch">
+  <div
+    class="login-principal d-flex flex-column justify-content-center align-items-center">
+   
+<form id="form_login" action="login" method="post" >
+    
+  <div class="mb-3">
+    <label class="form-label">Nombre de Usuario</label>
+    <input type="text" class="form-control"   name="user" required value={{user}}>
+   
+  </div>
+
+  <div class="mb-3">
+    <label  class="form-label">Password</label>
+    <input type="password" class="form-control"  name="pass" required value={{pass}}>
+     <div id="passHelp" class="form-text">Nunca comparta su contraseña</div>
+  </div>
+   <p>{{{message}}}</p>
+
+
+   <div class="d-flex flex-column justify-content-center align-items-center">
+    <button type="submit" class="btn btn-primary">Login</button>
+   </div>
+  
+</form>
+
+
+  </div>
+
+</section>
+
+
+
+
+

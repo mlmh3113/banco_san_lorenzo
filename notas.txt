@@ -1,0 +1,2 @@
+  const aux=data[0].fecha
+  const fecha_venta= aux.getDate()+ "-" + (aux.getMonth()+1) + "-" + aux.getFullYear();

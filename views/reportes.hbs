@@ -1,0 +1,164 @@
+<nav class="navbar navbar-expand-md navbar-ligth">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbar-toggler"
+      aria-controls="navbarTogglerDemo01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-toggler">
+      <a class="navbar-brand" href="">
+        <img src="images/hand-shake.png" alt="logo" width="50" />
+      </a>
+      <ul class="navbar-nav d-flex justify-content-center align-items-center">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="login"
+          >Ingresar</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<div class="container d-flex justify-content-center">
+  <h2>Reportes de ventas por numero de Vendedor</h2>
+</div>
+
+
+<div class="container d-flex flex-column justify-content-evenly col-lg-4 mb-2">
+
+
+
+<div>
+
+  
+
+  <form action="" method="post" class="d-flex">
+</div class="container d-flex flex-column justify-content-evenly col-lg-4 mb-2">
+
+    <input
+      type="number"
+      placeholder=""
+      name="codigo_vendedor"
+      class="form-control shadow"
+      required
+    />
+
+
+    <button class="btn btn-secondary my-2" type="submit">Consultar</button>
+    </div>
+
+    
+    
+  </form>
+
+</div>
+
+{{#if data}}
+<div class="container  text-center col-sm-12 col-md-12 col-lg-12 col-xl-8 tabla my-2">
+  
+<table class="container  table text-center table-striped  ">
+  <p class="mt-2">Tarjetas</p>
+  <thead>
+    <tr>
+    
+      <th scope="col">DNI</th>
+      <th scope="col">Tipo tarjeta</th>
+      <th scope="col">Sucursal</th>
+
+  </thead>
+  <tbody>
+  
+
+ 
+
+      {{#each data}}
+
+      
+      <td>{{cliente}}</td>
+      <td>{{tipoTarj}}</td>
+      <td>{{sucursal}}</td>
+
+    </tr>
+{{/each}} 
+
+  </tbody>
+</table>
+</div>
+{{/if}}
+
+{{#if dataPrestamo}}
+<div class="container  text-center col-sm-12 col-md-12 col-lg-12 col-xl-8 tabla my-2">
+  
+<table class="container  table text-center table-striped  ">
+  <p class="mt-2">Prestamos</p>
+  <thead>
+    <tr>
+    
+      <th scope="col">DNI</th>
+      <th scope="col">Monto</th>
+      <th scope="col">Sucursal</th>
+
+  </thead>
+  <tbody>
+  
+      {{#each dataPrestamo}}
+
+      
+      <td>{{dni}}</td>
+      <td>{{monto}}</td>
+      <td>{{sucursal}}</td>
+
+    </tr>
+{{/each}} 
+
+  </tbody>
+</table>
+</div>
+{{/if}}
+
+{{#if dataSeguros}}
+<div class="container  text-center col-sm-12 col-md-12 col-lg-12 col-xl-8 tabla my-2">
+  
+
+
+<table class="container  table text-center table-striped  ">
+  <p class="mt-2">Seguros</p>
+  <thead>
+    <tr>
+    
+      <th scope="col">DNI</th>
+      <th scope="col">Tipo seguro</th>
+      <th scope="col">Sucursal</th>
+
+  </thead>
+  <tbody>
+  
+      {{#each dataSeguros}}
+
+      
+      <td>{{cliente}}</td>
+      <td>{{codSeg}}</td>
+      <td>{{sucursal}}</td>
+
+    </tr>
+{{/each}} 
+
+  </tbody>
+</table>
+</div>
+  {{/if}}
+
+
+
