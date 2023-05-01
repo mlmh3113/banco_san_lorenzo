@@ -1,0 +1,11 @@
+Para realizar la implementacion de esta base de datos se debe ejecutar en MySQL
+Workbench cada uno de los archivos mensionados a continuacion.
+1_Creacion de esquema y tablas:contiene la creacion del esquema y sus tablas correspondientes
+2_insercion de datos:contiene los datos que se ingresaran a la base de datos "coder_empresa".
+3_vistas:generan las vistas del esquema.
+4_funciones:contiene las funciones que se ejecutaran en el sistema.
+5_procedimientos:contiene los procedimientos que se ejecutaran en el sistema.
+6_triggers:contiene los disparadores que se ejecutaran en la base de datos.
+7_DCL:contiene la informacion para la creacion de datos.
+8_TCL:contiene la informacion para la realizar las opeacion de control.
+9_back Up: este archivo permite la recuperacion de la base de datos.
